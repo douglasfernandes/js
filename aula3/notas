@@ -1,3 +1,5 @@
-
+npm install express --save
 npm install ejs swagger-ui-express yamljs
 
+#para nao precisar reiniciar o app
+npm install -g nodemon 

@@ -24,7 +24,6 @@ const div = (req, res) => {
   res.send(`div ${result}`);
 };
 
-
 const div2 = ({ modelCalc }, req, res) => {
   const { a, b } = req.params;
   const result = modelCalc.div(parseInt(a), parseInt(b));

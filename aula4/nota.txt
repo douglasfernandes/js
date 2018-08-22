@@ -1,0 +1,6 @@
+npm init
+npm install express
+npm install nodemon -g
+npm start
+
+npm install swagger-ui-express yamljs
