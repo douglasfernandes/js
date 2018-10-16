@@ -35,6 +35,7 @@ class App extends Component {
                   <div class="msg_history">
                   <Msg type='in' msg='Uma msg in 1'/>
                   <Msg type='out' msg='Uma msg out 1'/>
+                  <Msg type='out' msg='outro out'/>
 
                   </div>
 

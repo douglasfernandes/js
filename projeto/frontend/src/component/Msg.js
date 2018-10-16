@@ -1,6 +1,8 @@
 import React from 'react'
+import Time from 'react-time'
 
 export const InComing = (props) => {
+    let now = new Date()
     return (
         <div class="incoming_msg">
             <div class="incoming_msg">
@@ -8,7 +10,9 @@ export const InComing = (props) => {
                 <div class="received_msg">
                     <div class="received_withd_msg">
                         <p>{props.msg}</p>
-                        <span class="time_date"> 11:01 AM    |    June 9</span></div>
+                        <span class="time_date"> 
+                            <Time value={now} format="HH:mm:ss" /> | <Time value={now} format="DD/MM/YYYY" />
+                        </span></div>
                 </div>
             </div>
         </div>
@@ -16,11 +20,14 @@ export const InComing = (props) => {
 }
 
 export const OutComing = (props) => {
+    let now = new Date()
     return (
         <div class="outgoing_msg">
             <div class="sent_msg">
                 <p>{props.msg}</p>
-                <span class="time_date"> 11:01 AM    |    June 9</span>
+                <span class="time_date"> 
+                    <Time value={now} format="HH:mm:ss" /> | <Time value={now} format="DD/MM/YYYY" />
+                </span>
             </div>
         </div>
     )
